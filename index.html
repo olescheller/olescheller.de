@@ -8,15 +8,21 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
       rel="stylesheet"
+      rel="preload"
+      as="style"
     />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      rel="preload"
+      as="style"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
+      rel="preload"
+      as="style"
     />
 
     <style>
@@ -44,7 +50,7 @@
           --font-size-small: 2rem;
           --font-size: 3rem;
           --font-size-very-large: 6rem;
-          --image-size: 100%;
+          --image-size: 512px;
           --padding: 3rem;
         }
       }
@@ -114,6 +120,8 @@
 
       .profile-picture {
         width: var(--image-size);
+        height: var(--image-size);
+        border-radius: 50%;
       }
       .imprint {
         padding-top: calc(var(--padding) * 2);
@@ -130,9 +138,10 @@
           <source type="image/jpeg" srcset="img/ole.jpg" />
           <img
             class="profile-picture"
-            src="os.jpg"
+            height="512px"
+            width="512px"
+            src="img/ole.jpg"
             alt="profile picture"
-            style="border-radius: 50%"
           />
         </picture>
         <div class="flex">
@@ -163,7 +172,8 @@
         Java Enterprise
         <h1>Professional Experience</h1>
         <h2>Web frontend</h2>
-        Typescript, ES2015+, React, Redux, RxJS, React Query, REST, PWA, SAML, Material UI
+        Typescript, ES2015+, React, Redux, RxJS, React Query, REST, PWA, SAML,
+        Material UI
         <h2>Backend</h2>
         ES2015+, Express, Parse Server, Python, php, SAML, SQL, NoSQL
         <h2>Dev Tools</h2>
